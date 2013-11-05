@@ -74,7 +74,7 @@ class plgHikashoppaymentPayone extends JPlugin
 		$gaga = $data['key'];
 		mail('post@chrisland.de','TEST! '.$gaga);
 		
-		$method->payment_params->apikey = 'das768khbadlkfjzrtzd23459cabasz74thnyadfwg';
+		$method->payment_params->apikey = '12345';
 		//$method->payment_params->apikey = $postdata['key'];
 		
 		if (!$method->payment_params->apikey) {
