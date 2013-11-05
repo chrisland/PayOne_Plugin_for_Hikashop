@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
-<install type="plugin" version="1.1" method="upgrade" group="hikashoppayment">
-	<name>Payone Payment Plugin for Hikashop</name>
+
+<install type="plugin" version="1.5" method="upgrade" group="hikashoppayment">
+	<name>Hikashop Payone Payment Plugin</name>
 	<creationDate>Juni 2012</creationDate>
 	<version>1.1.0</version>
 	<author>Christian Marienfeld</author>

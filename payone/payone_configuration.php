@@ -26,7 +26,6 @@ defined('_JEXEC') or die('Restricted access');
 		</label>
 	</td>
 	<td>
-		<? if (!$this->element->payment_params->request) { $this->element->payment_params->request='authorization'; } ?>
 		<input type="text" name="data[payment][payment_params][request]" value="<?php echo @$this->element->payment_params->request; ?>" />
 	</td>
 </tr>
