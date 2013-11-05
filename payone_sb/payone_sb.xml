@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.1" method="upgrade" group="hikashoppayment">
+	<name>Payone Payment Plugin for Hikashop (Online-Ueberweisung)</name>
+	<creationDate>Juni 2012</creationDate>
+	<version>1.1.0</version>
+	<author>Christian Marienfeld</author>
+	<authorEmail>post@chrisland.de</authorEmail>
+	<authorUrl>http://www.chrisland.de</authorUrl>
+	<copyright>Copyright (C) 2012 Christian Marienfeld - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your payone payment system</description>
+	<files>
+		<filename plugin="payone_sb">payone_sb.php</filename>
+		<filename>payone_sb_configuration.php</filename>
+		<filename>payone_sb_end.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field
+                        id="pluginoptions"
+                        name="pluginoptions"
+                        type="pluginoptions"
+                        label="hikashop"
+                        description="HikaShop options"
+                />
+            </fieldset>
+		</fields>
+	</config>
+</install>
