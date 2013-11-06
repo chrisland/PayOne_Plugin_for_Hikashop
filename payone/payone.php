@@ -61,22 +61,10 @@ class plgHikashoppaymentPayone extends JPlugin
 	}
 	function onPaymentNotification(&$statuses){
 	
-		//$postdata = print_r($_POST,true);
-		//$getdata = print_r($_GET,true);
-		
 		include_once("payone_helper.php");
 		
-		if ($_SERVER['REQUEST_METHOD'] == "POST") {
-			$data = $_POST;
-		} else {
-			$data = $_GET;
-		}
-		$gaga = $data['key'];
-		mail('post@chrisland.de','TEST! '.$gaga);
-		
 		$method->payment_params->apikey = '12345';
-		//$method->payment_params->apikey = $postdata['key'];
-		
+	
 		if (!$method->payment_params->apikey) {
 			echo "ERR=No Api-Key";
 			return false;
