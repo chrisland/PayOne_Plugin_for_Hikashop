@@ -15,7 +15,7 @@ Please dont forget to change the config in each plugin in the Joomla Backend
 
 More Payments
 -------
-Payone bietet natürlich mehr als nur Onlineüberweisung, für alle anderen Bezahlmethoden (Kreditkarte, Lastschift, Paypal, Vorkasse) gibt es ein eigenständiges Plugin auf Nachfrage:  www.chrisland.de
+working on...
 
 
 ###Compatibility
