@@ -21,7 +21,7 @@ class plgHikashoppaymentPayone extends JPlugin
 	function onPaymentDisplay(&$order,&$methods,&$usable_methods){
 		if(!empty($methods)){
 			foreach($methods as $method){
-			if($method->payment_type!='payone' || !$method->enabled){
+			if($method->payment_type!='payone'  || !$method->enabled  || !$method->published){
 				continue;
 			}
 			if(!empty($method->payment_zone_namekey)){
