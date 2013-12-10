@@ -20,7 +20,7 @@ class plgHikashoppaymentPayone_sb extends JPlugin
 	function onPaymentDisplay(&$order,&$methods,&$usable_methods){
 		if(!empty($methods)){
 			foreach($methods as $method){
-				if($method->payment_type!='payone_sb'  || !$method->enabled  || !$method->published){
+				if($method->payment_type!='payone_sb'  || ( !$method->enabled && !$method->published )){
 					continue;
 				}
 				if(!empty($method->payment_zone_namekey)){
