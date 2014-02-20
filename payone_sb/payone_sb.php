@@ -156,7 +156,7 @@ class plgHikashoppaymentPayone_sb extends JPlugin
 		$vars["customerid"] 				= $method->payment_params->customerid;
 		$vars["mode"] 						= $method->payment_params->mode;
 		$vars["portalid"] 					= $method->payment_params->portalid;
-		$vars["reference"] 					= $reference;
+		$vars["reference"] 					= sprintf ("%04d", $reference);
 		$vars["request"] 					= $method->payment_params->request;
 		$vars["firstname"]					= $order->cart->billing_address->address_firstname;
 		$vars["lastname"]					= $order->cart->billing_address->address_lastname;
